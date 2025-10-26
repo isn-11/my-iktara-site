@@ -26,6 +26,11 @@ All documentation for your iktara Medical Scrubs PWA, organized by topic.
    - ASCII diagrams
    - Perfect for visual learners
 
+**⚠️ Having build errors?**
+
+- **[ERRORS_FIXED.txt](./ERRORS_FIXED.txt)** ← Quick error fix reference
+- **[VERCEL_BUILD_FIX.md](./VERCEL_BUILD_FIX.md)** ← Complete error fix guide
+
 ---
 
 ## 🌐 Deployment Guides
@@ -147,6 +152,26 @@ All documentation for your iktara Medical Scrubs PWA, organized by topic.
 ---
 
 ## 🛠️ Technical Specifications
+
+### Error Fixes & Troubleshooting
+
+- **[VERCEL_BUILD_FIX.md](./VERCEL_BUILD_FIX.md)** ⭐ **ERROR FIX GUIDE!**
+  - Chunk size warning fix
+  - Output directory error fix
+  - Complete troubleshooting
+  - What was changed
+  - How to redeploy
+
+- **[ERRORS_FIXED.txt](./ERRORS_FIXED.txt)**
+  - Quick error reference
+  - One-page summary
+  - What errors were fixed
+  - How to deploy now
+
+- **[CHUNK_SIZE_FIX.md](./CHUNK_SIZE_FIX.md)**
+  - Original chunk size fix
+  - Build optimization details
+  - Performance benefits
 
 ### Build & Configuration
 

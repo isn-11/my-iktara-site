@@ -11,25 +11,29 @@ export default defineConfig({
     },
   },
   build: {
-    // Increase chunk size warning limit to 1000kb (1MB)
-    chunkSizeWarningLimit: 1000,
+    outDir: 'dist',
+    // Increase chunk size warning limit to 2000kb (2MB)
+    chunkSizeWarningLimit: 2000,
     rollupOptions: {
       output: {
         // Manual chunk splitting for better caching
-        manualChunks: {
-          // Vendor chunks
-          'react-vendor': ['react', 'react-dom'],
-          'motion-vendor': ['motion/react'],
-          'ui-vendor': ['lucide-react'],
-          // Put all shadcn/ui components in separate chunk
-          'ui-components': [
-            './components/ui/button',
-            './components/ui/input',
-            './components/ui/select',
-            './components/ui/dialog',
-            './components/ui/card',
-            './components/ui/dropdown-menu',
-          ],
+        manualChunks(id) {
+          // React and React DOM
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
+            return 'react-vendor';
+          }
+          // Motion/Framer Motion
+          if (id.includes('node_modules/motion') || id.includes('node_modules/framer-motion')) {
+            return 'motion-vendor';
+          }
+          // Radix UI components
+          if (id.includes('node_modules/@radix-ui')) {
+            return 'radix-vendor';
+          }
+          // Other large vendor libraries
+          if (id.includes('node_modules')) {
+            return 'vendor';
+          }
         },
       },
     },

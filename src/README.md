@@ -10,6 +10,7 @@ Your app is **100% production-ready** with PWA support and iktara logo configure
 
 **Option 1: GitHub + Vercel (Recommended)**
 ```bash
+npm install          # Install dependencies first
 git init
 git add .
 git commit -m "iktara PWA production ready"
@@ -20,11 +21,14 @@ Then go to [vercel.com](https://vercel.com) → Import project → Deploy!
 
 **Option 2: Vercel CLI**
 ```bash
+npm install          # Install dependencies first
 npm install -g vercel
 vercel --prod
 ```
 
 📖 **Detailed Instructions:** [DEPLOY_NOW.md](./DEPLOY_NOW.md) | [QUICK_DEPLOY.txt](./QUICK_DEPLOY.txt)
+
+**⚠️ Having build errors?** See [VERCEL_BUILD_FIX.md](./VERCEL_BUILD_FIX.md) or [ERRORS_FIXED.txt](./ERRORS_FIXED.txt)
 
 ---
 
