@@ -138,9 +138,40 @@ All documentation for your iktara Medical Scrubs PWA, organized by topic.
   - Purple theme (#4C3F6C)
   - Yellow accents (#FFFD8F)
 
+- **Build Configuration:**
+  - Vite 6 optimized
+  - Chunk size warnings resolved
+  - Manual chunk splitting
+  - See [BUILD_CONFIG.md](./BUILD_CONFIG.md)
+
 ---
 
 ## 🛠️ Technical Specifications
+
+### Build & Configuration
+
+- **[BUILD_CONFIG.md](./BUILD_CONFIG.md)** ⭐ **NEW!**
+  - Chunk size warning fix
+  - Build optimization
+  - Vite configuration
+  - Bundle analysis
+  - Performance tuning
+
+- **[vite.config.ts](./vite.config.ts)**
+  - Vite build settings
+  - Manual chunk splitting
+  - Path aliases
+  - Optimization options
+
+- **[package.json](./package.json)**
+  - All dependencies
+  - Build scripts
+  - Project metadata
+
+- **[tsconfig.json](./tsconfig.json)**
+  - TypeScript configuration
+  - Compiler options
+  - Path mapping
 
 ### Icon Files
 

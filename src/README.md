@@ -123,6 +123,8 @@ npm run build
 npm run preview
 ```
 
+**Note:** Build configuration is optimized in `vite.config.ts` to avoid chunk size warnings. See [BUILD_CONFIG.md](./BUILD_CONFIG.md) for details.
+
 ## 📚 Documentation
 
 **🚀 Deployment Guides:**

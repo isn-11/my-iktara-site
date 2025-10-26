@@ -8,6 +8,15 @@ Your **iktara Medical Scrubs** Progressive Web App is **100% complete** and read
 
 ## ⚡ Quick Deploy (5 Minutes)
 
+### First Time Setup:
+
+```bash
+# Install dependencies first
+npm install
+```
+
+This installs all the packages your app needs. Takes ~1-2 minutes.
+
 ### Choose Your Method:
 
 ```
